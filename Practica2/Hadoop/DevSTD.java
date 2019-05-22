@@ -13,7 +13,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class DevSTD
 {
-	public static void main(String[] args) throws IOException
+	public static void main(String[] args) throws Exception
 	{
 
       Configuration conf = new Configuration();
