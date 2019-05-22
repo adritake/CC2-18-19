@@ -14,7 +14,7 @@ public class DevSTDMapper extends Mapper<Object, Text, Text, DoubleWritable>{
      String[] fields = value.toString().split(",");
      if(fields[0] != "f1"){
        for(int i = 0; i<fields.length; i++) {
-         context.write(Integer.toString(i), Double.parseDouble(fields[i]));
+         context.write(new Text(Integer.toString(i)), Double.parseDouble(fields[i]));
        }
      }
    }
