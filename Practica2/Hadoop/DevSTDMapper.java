@@ -9,7 +9,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 public class DevSTDMapper extends Mapper<Object, Text, Text, DoubleWritable>{
 
 
-   public void map(Object key, Text value, Context context) throws IOException {
+   public void map(Object key, Text value, Context context) throws IOException, InterruptedException {
 
      String[] fields = value.toString().split(",");
 
