@@ -18,7 +18,7 @@ public class DevSTD
 
       Configuration conf = new Configuration();
       Job job = Job.getInstance(conf, "Mean test");
-  	  job.setJarByClass(WordCount.class);
+  	  job.setJarByClass(DevSTD.class);
       job.setMapperClass(DevSTDMapper.class);
       job.setCombinerClass(DevSTDReducer.class);
       job.setReducerClass(DevSTDReducer.class);
